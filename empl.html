@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            position: relative;
+            left: 40px;
+            top: 20px;
+        }
+        th,td{
+            border-bottom: solid 1.5px #f79646 ;
+            border-collapse: collapse;
+            border-right: solid 1.5px rgb(150, 150, 150);
+            
+        }
+        tr:nth-child(even){
+            background-color: #fde9d9;
+        }
+        #a1{
+            border-right-color: transparent;
+            background-color: #f79646;
+            color: #fff;
+            font-size: x-large;
+           font-weight: bold;
+            letter-spacing: .3em;
+            
+        }
+        #a2{
+            padding: 8px;
+            font-size: large;
+        }
+        #a3{
+            border-block-end: transparent;
+            background-color: #687886;
+            color: #fff;
+        }
+        #align{
+            text-align: right;
+        }
+        .align{
+            text-align: right;
+        }
+    </style>
+    <div>
+
+        <table>
+            <tr>
+                <th colspan="4"  id="a1" >Employee Timecard</th>
+            </tr>
+            <tr>
+                <th id="a2">Day</th>
+                <th id="a2">Regular</th>
+                <th id="a2">Overtime</th>
+                <th style="border-right-color: transparent;" id="a2">Total</th>
+            </tr>
+            
+            <tr>
+                <td>Monday</td>
+                <td id="align">8</td>
+                <td id="align">0</td>
+                <td id="align" style="border-right-color: transparent;">8</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+            <td id="align">8</td>
+            <td id="align">2.5</td>
+            <td id="align" style="border-right-color: transparent;">10.5</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td id="align">8</td>
+            <td id="align">0</td>
+            <td  id="align"style="border-right-color: transparent;">8</td>
+        </tr>
+        <tr> 
+            <td>Thursday</td>
+            <td id="align">8</td>
+            <td id="align">0</td>
+            <td  id="align"style="border-right-color: transparent;">8</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td id="align">8</td>
+            <td id="align">0</td>
+            <td id="align" style="border-right-color: transparent;">8</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td id="align">0</td>
+            <td id="align">5</td>
+            <td  id="align"style="border-right-color: transparent;">5</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td id="align">0</td>
+            <td id="align">1</td>
+            <td id="align" style="border-right-color: transparent;">1</td>
+        </tr>
+        <tr >
+            <th id="a3" >Total weekly hours:</th>
+            <th  id="a3" class="align" >40</th>
+            <th id="a3"  class="align">8.5</th>
+            <th  id="a3" class="align" style="border-right-color: transparent;">48.5</th>
+        </tr>
+        
+    </table>
+</div>
+</body>
+</html>
